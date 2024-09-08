@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Library%2FSilent%20ui'))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/main/%E5%8C%97%E6%9E%81%E6%98%9F%E8%84%9A%E6%9C%ACui.Iua", true))()
 
 local Window = Library:new("土狗脚本V1.");
 
