@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/IIIlllllIIIIIIlllllllllllllllllllllllllllllllllllllllllIIllIIIlllllIIIIIIl/main/%E5%8E%9F%E7%89%88.lua", true))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Library%2FSilent%20ui'))()
 
 local Window = Library:new("土狗脚本V1.");
 
@@ -25,8 +25,24 @@ end)
 GG:Button("复制QQ群链接", function()
     setclipboard("http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=4y_mKrzZMuHD6bb4RaE-tsOpcky0Hb_u&authKey=7NetXzpU9j%2FkieAX1uSHKbjXYfevsVBf3V9DB0FvHBcWwFm9Z1v%2BBs28CrlpcJJi&noverify=0&group_code=884776077")
 end)
+
 XX:Button("摧毁界面", function()
     game:GetService("CoreGui")["frosty is cute"]:Destroy()
+end)
+
+XX:Toggle("移除UI辉光", "DHG", false, function(DHG)
+    if DHG then
+        game:GetService("CoreGui")["frosty is cute"].Main.DropShadowHolder.Visible = false
+    else
+        game:GetService("CoreGui")["frosty is cute"].Main.DropShadowHolder.Visible = true
+    end
+end)
+XX:Toggle("彩虹UI", "RBUI", false, function(RBUI)
+    if RBUI then
+        game:GetService("CoreGui")["frosty is cute"].Main.Style = "DropShadow"
+    else
+        game:GetService("CoreGui")["frosty is cute"].Main.Style = "Custom"
+    end
 end)
 
 General:Slider("步行速度!", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
