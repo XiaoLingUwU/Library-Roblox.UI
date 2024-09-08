@@ -2,11 +2,21 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/zilin
 
 local Window = Library:new("土狗脚本V1.");
 
-local GG = Window:GG("公告",'16060333448')
+local GG = Window:GG("公告",'16060333448'
+)local AL = GG:section("公告", true)
+
 local XX = Window:XX("信息",'16060333448')
+local AL = XX:section("信息", true)
+
 local ZZ = Window:ZZ("作者",'16060333448')
+local AL = ZZ:section("作者", true)
+
 local General = Window:General("玩家",'16060333448')
-local GX = Window:Tab("通用",'16060333448')   
+local AL = General:section("玩家", true)
+
+local GX = Window:Tab("通用",'16060333448')
+local AL = GX:section("通用", true)
+   
 
 XX:Label("你的用户名:"..game.Players.LocalPlayer.Name)
 XX:Label("你的注入器:"..identifyexecutor())
