@@ -1,12 +1,12 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/Ey3CpCHS"))()     
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/IIIlllllIIIIIIlllllllllllllllllllllllllllllllllllllllllIIllIIIlllllIIIIIIl/main/%E5%8E%9F%E7%89%88.lua", true))()
 
 local Window = Library:new("土狗脚本V1.");
 
 local GG = Window:Tab("公告",'16060333448')
-local XX = creds:section("信息",true)
-local ZZ = creds:section("作者",true)
-local General = Main:section("玩家",true)
-local GX = Main:section("通用",true)
+local XX = Window:Tab("信息",'16060333448')
+local ZZ = Window:Tab("作者",'16060333448')
+local General = Window:Tab("玩家",'16060333448')
+local GX = Window:Tab("通用",'16060333448')   
 
 XX:Label("你的用户名:"..game.Players.LocalPlayer.Name)
 XX:Label("你的注入器:"..identifyexecutor())
@@ -14,7 +14,7 @@ XX:Label("服务器id:"..game.GameId)
 
 GG:Label("作者小凌")
 GG:Label("作者在上学所以没时间更新!")
-GG:Label("正在努力优化")
+GG:Label("用的是小云ui别见怪")
 GG:Label("请勿倒卖")
 GG:Button("复制作者QQ", function()
     setclipboard("1211373508")
